@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="icon" href="{{options.favicon_url |default('/static/img/firekylin.jpg')}}">
+  {% if options.favicon %}<link rel="shortcut icon" href="{{options.favicon}}" type="image/x-icon">{% endif %}
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/rss.html">
+  <link rel=search type="application/opensearchdescription+xml" href="/opensearch.xml" title="{{ options.title }}">
+  {% if options.keywords %}<meta name="keywords" content="{{options.keywords}}">{% endif %}
+  {% if options.description %}<meta name="description" content="{{options.description}}">{% endif %}
+  {%- block headers %}{% endblock -%}
+  {% set lscookie = 'lscookie'%}
+  <!--<link rel="stylesheet" href="/theme/firekylin/res/css/all.css" type="text/css" data-ls="css_firekylin">-->
+  
+  <link rel="stylesheet" href="/theme/HJTheme/res/css/css.css" type="text/css" />
+  <link rel="stylesheet" href="/theme/HJTheme/res/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/theme/HJTheme/res/css/post.css" type="text/css" />
+  <link rel="stylesheet" href="/theme/HJTheme/res/css/pagination.css" type="text/css" />
+  <link rel="stylesheet" href="/theme/HJTheme/res/css/all.css" type="text/css" />
+  
+  <!--{% if themeConfig.sidebarBackground or themeConfig.sidebarBackgroundColor or themeConfig.customCSS or themeConfig.sidebarColor %}
+  <style>
+    {% if themeConfig.sidebarBackground or themeConfig.sidebarBackgroundColor %}
+      #sidebar {
+        {% if themeConfig.sidebarBackground %}
+        background-image: url('{{themeConfig.sidebarBackground}}');
+        background-size:cover;
+        {% endif %}
+        {% if themeConfig.sidebarBackgroundColor %}
+        background-color: {{themeConfig.sidebarBackgroundColor}};
+        {% endif %}
+      }
+    {% endif %}
+
+    {% if themeConfig.sidebarColor %}
+    #sidebar .profile span, #sidebar .buttons li a, #sidebar .buttons li a:hover{
+      color: {{themeConfig.sidebarColor}};
+    }
+    {% endif %}
+    {% if themeConfig.customCSS %}{{themeConfig.customCSS | safe}}{% endif %}
+  </style>
+  {% endif %}-->
+</head>
+<body>
+	<div class="head hdbk" style="width: 100%;">
+			<div id="head" style="width: 100%; height: 100px;">
+				<div class="head_bd">
+					<span class="verticalAlign"></span>
+					<div class="head_logo">
+						<span class="verticalAlign"></span>
+						<a href="/" title="HJTheme" style="height: 60px;">
+							<img src="/theme/HJTheme/res/image/logo116.png" />
+						</a>
+					</div>
+					<div class="head_banner">
+                      {% for nav in navigation %}
+                      <div class="bn_bt">
+                          <a href="{{nav.url}}" class="bn_a on" title="{{nav.label}}" data="{{nav.option}}">{{nav.label}}</a>
+                      </div>
+                      {% endfor %}
+      				</div>
+				</div>
+			</div>
+		</div>
+
+<div id="sidebar-mask"></div>
+<!--<div id="main">-->
+{% block content %}
+
+{% endblock %}
+<footer id="footer" class="footer">
+  <div class="about" style="100%">
+    &copy; {{ currentYear }}&nbsp; <a href=""{{http.hostname}}>{{options.title}}</a>
+    {% if options.miitbeian or options.mpsbeian %}
+      {% if options.miitbeian %}
+      &nbsp;-&nbsp;<a target="_blank" rel="nofollow" class="external beian" href="http://www.miitbeian.gov.cn/">{{options.miitbeian}}</a>
+      {% endif %}
+      {% if options.mpsbeian %}
+      &nbsp;-&nbsp;<a target="_blank" rel="nofollow" class="external beian" href="http://www.beian.gov.cn/">{{options.mpsbeian}}</a>
+      {% endif %}
+    {%else%}
+      <!--&nbsp;-&nbsp;<a href="/">{{http.hostname}}</a>-->
+    {% endif %}
+    <br />
+    <!--Powered by&nbsp;<a target="_blank" href="https://thinkjs.org">ThinkJS</a>&nbsp;&amp;&nbsp;<a target="_blank" rel="nofollow" class="external" href="https://firekylin.org">FireKylin {{VERSION}}</a>-->
+
+  </div>
+  <!--<div class="copyright" style="100%">Copyright © 2014~2017</div>-->
+  <div id="cnzz" style="display: none;"></div>
+  
+</footer>
+<!--</div>-->
+<script src="/theme/HJTheme/res/js/firekylin.js" data-ls="js_firekylin"></script>
+{% if options.analyze_code %}
+  {{options.analyze_code | safe}}
+{% endif %}
+{% if themeConfig.customJS %}<script>{{themeConfig.customJS | safe}}</script>{% endif %}
+
+</body>
+</html>

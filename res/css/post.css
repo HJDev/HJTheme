@@ -1,0 +1,249 @@
+.postcontent{width:800px;margin:0 auto;border-right: 1px solid #dfdfdf;background-color: #ffffff;padding:40px 135px 40px 135px;}
+.post_path{height:20px;line-height: 20px;color: #00a4eb;font-size: 16px;}
+.post_path a{color: #00a4eb;}
+.post_title{line-height:44px;margin: 28px 0 34px;color: #333333;font-size: 32px;font-weight: normal;}
+.post_title a{color:#333333;}
+.post_about{position: relative;margin-bottom:36px;height:48px;border-top: 1px solid #dfdfdf;}
+.post_about p{line-height: 24px;color: #8e8e8e;font-size: 14px;}
+.post_about p a{color: #8e8e8e;}
+.font_size{position: absolute;top:20px;right:0;z-index:9999;overflow:hidden;width: 40px;min-height: 20px;background-color: #ffffff;}
+.font_size span{width: 38px;height: 18px;display:block;border: 1px solid #dfdfdf;line-height:17px;font-size:14px;color: #8e8e8e;text-align:center;cursor: pointer;}
+.size_level{}
+.size_level li{width: 38px;height: 18px;border-right: 1px solid #dfdfdf;border-bottom: 1px solid #dfdfdf;border-left: 1px solid #dfdfdf;line-height:17px;font-size:14px;color: #8e8e8e;text-align:center;cursor: pointer;}
+.size_level li:hover{color: #808080;background-color: #f1f1f1;}
+.size_level li.on{color: #01a5ec !important;}
+.contheight {height: 16px;width: 100%;}
+.contheight10 {height: 10px;width: 100%;}
+.post_txt{line-height: 30px;color: #333333;font-size: 16px !important;margin-bottom:46px;letter-spacing:0.5px;word-wrap: break-word; word-break: normal; }
+/*.post_txt * {font-size: 16px !important;}*/
+.post_txt img{padding:0px 0;max-width: 100% !important;height: auto !important;}
+.post_txt u{text-decoration: none;padding: 1px 0;line-height:26px;border-bottom: 1px solid #555555;}
+.post_txt .image_desc{color: #808080; font-size: 14px !important; padding: 6px 0 20px; line-height: 20px;}
+.super{font-size: 20px !important;line-height: 38px;}
+.super *{font-size: 20px !important;}
+.large{font-size: 18px !important;line-height: 34px;}
+.large *{font-size: 18px !important;}
+.small{font-size: 14px !important;line-height: 26px;}
+.small *{font-size: 14px !important;}
+.atlas_360{width:670px;height:280px;margin-bottom:40px;position:relative;color:#ffffff;background-color: #7c7c7c;}
+.atlas_360 a img{width:670px;height:280px;}
+.atlas_360 .atlas_360_txt{width:670px;height:30px;line-height:30px;font-size:16px;text-indent:12px;background:url(http://file.thepaper.cn/www/v3/img/pic_study_title.png) repeat;position:absolute;left:0px;bottom:0px;}
+.atlas_360 .atlas_num{width:60px;height:26px;line-height:26px;font-size:18px;text-indent:38px;background: url(http://file.thepaper.cn/www/v3/img/atlas_logo32.png) no-repeat 0 0;position:absolute;right:5px;bottom:50px;}
+#player_wrapper{width:670px;height:376px;}
+.post_editor{line-height: 20px;color: #8e8e8e;font-size: 14px;}
+.post_editor span{min-width:340px;float:right;display:inline-block;line-height: 20px;font-size: 12px;text-align:right;}
+.post_keyword{line-height: 25px;color: #8e8e8e;font-size: 14px;margin-top:12px;text-indent:4px;border-top: 1px solid #dfdfdf;padding-top: 3px;}
+.post_topic{color: #00a5ec; font-size: 16px; font-family: Microsoft YaHei}
+.top_word_relation{margin-bottom: 50px }
+
+.post_love{margin:50px auto;height:36px;}
+.post_love .nbgbox{ width:32%;height: 28px; padding-top: 12px; display: inline-block; background-color: #f0f0f0; margin-right: 5px; float: left; text-align:center; }
+.post_love a{height:16px;line-height:15px;font-size: 14px;color: #8e8e8e;/*margin-left:80px;*/padding: 0px 0 0px 28px;display: inline-block;/*float:left;*/ overflow:hidden; max-width:175px;}
+.post_love a.zan{background: url(http://file.thepaper.cn/www/v3/img/news_zan16.png) no-repeat 0 -1px;/*margin-left: 85px;*/}
+.post_love a.zan_ok{background: url(http://file.thepaper.cn/www/v3/img/news_zan16.png) no-repeat 0 -18px;}
+.post_love a.shoucang{background: url(http://file.thepaper.cn/www/v3/img/news_fav16.png) no-repeat 0 2px;}
+.post_love a.shoucang_ok{background: url(http://file.thepaper.cn/www/v3/img/news_fav16.png) no-repeat 0 -13px;}
+.post_love a.genzong{background: url(http://file.thepaper.cn/www/v3/img/news_gz16.png) no-repeat 0 1px;}
+.post_love a.genzong_ok{background: url(http://file.thepaper.cn/www/v3/img/news_gz16.png) no-repeat 0 -15px;}
+.post_love a span{float:right;font-size: 12px;}
+
+.post_imgad{min-height:0px;background-color: #f0f0f0;}
+.post_txtad{line-height:24px;font-size: 15px;color: #222;font-weight:bold;margin-top:15px;}
+.post_txtad a{color: #222;}
+
+.post_tit2{margin:35px 0 20px;border-bottom: 1px solid #b9b9b9;height:28px;}
+.post_tit2 u{text-decoration: none;padding: 4px 0;line-height:26px;font-size: 15px;color: #222;border-bottom: 2px solid #ff8104;margin-right:20px;}
+.post_tit2 span{font-size: 14px;color: #ff8104;}
+.post_tit2 h2{display: inline;cursor: pointer;border-bottom: 2px solid #ff8104;color: #222;font-size: 15px;font-weight: lighter}
+
+.ctread_bd{/*width:610px;*/height:185px;margin:0 auto;overflow:hidden;}
+.ctread_li{width:215px;height:185px;float:left;margin-right:12.5px;}
+.ctread_li .ctread_img{}
+.ctread_li .ctread_img img{width:215px;height:132px;}
+.ctread_li .ctread_name{width:215px;height:40px;overflow:hidden;line-height:20px;font-size:14px;font-family:"寰蒋闆呴粦";padding:5px 0;font-weight:bold;}
+
+.post_tit3{margin:40px 0 20px;border-bottom: 1px solid #b9b9b9;height:28px;}
+.post_tit3 h2{cursor: pointer;display: inline;text-decoration: none;padding: 4px 0;line-height:26px;font-size: 15px;font-weight: lighter;color: #222;border-bottom: 2px solid #ff8104;margin-right:20px;}
+.post_tit3 h2.cur{border-bottom:0;}
+.post_tit3 h2 span{color: #868686;}
+
+.postct_share{width:34px;position: fixed;bottom: 108px;left: 50% !important;margin-left: -548px;z-index: 999;}
+.postct_share span{width:46px;height:21px;display:block;float:left;}
+.postct_share a{width:34px;height:34px;margin-bottom:6px;display:block;float:left;background: url(http://file.thepaper.cn/www/v3/img/share_bg34.png) no-repeat;outline: 0;}
+.postct_share_detail{width:34px;position: fixed;bottom: 108px;left: 50% !important;margin-left: -448px;z-index: 999;}
+.postct_share_detail span{width:46px;height:21px;display:block;float:left;}
+.postct_share_detail a{cursor: pointer;width:34px;height:34px;margin-bottom:6px;display:block;float:left;background: url(http://file.thepaper.cn/www/v3/img/share_bg.png) no-repeat;outline: 0;}
+.ctshare_sina_detail{background-position: 0 -40px !important;}
+.ctshare_zone_detail{background-position: 0 -81px !important;}
+.ctshare_rr_detail{background-position: 0 -121px !important;}
+.ctshare_tx_detail{background-position: 0 -161px !important;}
+.ctshare_sina{background-position: 0 1px !important;}
+.ctshare_zone{background-position: 0 -39px !important;}
+.ctshare_rr{background-position: 0 -79px !important;}
+.ctshare_tx{background-position: 0 -119px !important;}
+
+.post_aq{border-bottom: 1px solid #dfdfdf;}
+
+.post_asktopic{padding-bottom: 16px;}
+.post_askuser{position:relative;margin-bottom: 30px;height:220px;background:#145897;cursor: pointer;}
+.post_askuser a.userurl{position: absolute;top:0;left:0;z-index:1;width:100%;height:220px;display:block;}
+.post_askuser_bd{display: inline-block;vertical-align: middle;margin-left: 156px;}
+.verticalAlign_topic {vertical-align: middle;display: inline-block;height: 186px;width: 1px;margin-left: -1px;}
+.post_askuser_sort{margin:0 auto;width:100px;height:36px;line-height:36px;text-align:center;color:#fff;font-size:14px;background: url(http://file.thepaper.cn/www/v3/img/sort_bg100.png) no-repeat;}
+.post_askuser_sort a{color: #fff;}
+.post_askuser_profile{margin:10px auto 0;width:350px;min-height:30px;overflow:hidden;line-height:30px;text-align:center;font-size: 17px;color: #fff;word-break:break-all;word-wrap:break-word;}
+.post_askuser_profile a{color: #fff;}
+
+.post_askuser_trbs{position: absolute;bottom:13px;left:0;z-index:2;width:670px;height:30px;text-align:center;}
+.post_askuser_trbs span.trbs{position: relative;padding:3px 0 3px 38px;margin:0 !important;display: inline-block;height:24px;line-height:24px;font-size:12px;}
+.post_askuser_trbs a.u_sname{height:24px;display:inline-block;color:#fff;padding-right:18px;background: url(http://file.thepaper.cn/www/v3/img/ask_fxg11.png) no-repeat right center;}
+.post_askuser_trbs span{margin-left:4px;height:24px;color:#fff;}
+.post_askuser_trbs span.trbs_zan{padding-left:18px;min-width:12px;display:inline-block;background: url(http://file.thepaper.cn/www/v3/img/ask_zan.png) no-repeat left 3px;cursor: pointer;}
+.post_askuser_trbs span.zan{background: url(http://file.thepaper.cn/www/v3/img/ask_zan_ok.png) no-repeat left 3px;}
+
+.post_askuser_trbs .userleft_hdimg{position: absolute;top:0;left:0;z-index:3;width:30px;height:30px;}
+.post_askuser_trbs .userleft_hdimg img{width:30px;height:30px;}
+.post_askuser_trbs .userleft_hdimg span{position: absolute;bottom: -4px;right: -5px;margin:0;width:14px;height:14px;display:block;z-index:99;background: url(http://file.thepaper.cn/www/v3/img/user_icon14.png) no-repeat 0 0;}
+.hdimg_bg30{position:absolute;left: 0;top: 0;z-index: 3;width:30px;height:30px;}
+.hdimg_bg30 img{width:30px;height:30px;}
+
+/*鐑棬鎺ㄨ崘*/
+.rtnews_hot{margin: 20px 0 10px;}
+.rmtj_news{margin-bottom: 10px;}
+.rmtj_img{text-align:center;}
+.rmtj_img img{width:198px;height:121px;}
+.rmtj_news p{line-height:22px;font-size:14px;color:#4c4c4c;padding: 6px 0;font-weight: 700;}
+.rmtj_news p a{color:#4c4c4c;}
+.rmtj_news p a:hover{color: #027EB3;}
+
+/*鐐归棶棰樸€佺偣璇勮銆佺偣鍥炵瓟*/
+.post_summary{line-height:30px;font-size:14px;color:#4c4c4c;padding: 0px 0 30px;border-bottom: 1px solid #636363;margin-bottom:40px;}
+.post_summary a{color:#00a5eb;}
+.post_summary2{line-height:30px;font-size:14px;color:#4c4c4c;padding: 0px 0 24px;}
+.post_summary2 a{color:#00a5eb;}
+.moreaq_title{line-height:30px;font-size:14px;color:#000000;padding:40px 0 0px; border-bottom: 1px solid #d9d9d9;font-weight: bold;clear:both;}
+.hot_ans_qus{padding:35px 0 0px;}
+/* weixin share style */
+.weixin_share{cursor: pointer !important}
+
+
+/*显示注释 block*/
+div.post_txt blockquote {
+  margin:10px 0 0 0;
+  padding:15px 20px;
+  border-left:5px solid #2479CC;
+  background-color: #f8f8f8;
+}
+
+div.post_txt blockquote p{
+  margin-bottom: 0;
+}
+
+div.post_txt blockquote a{
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/*代码显示行数*/
+div.post_txt code {
+  font-family: "Consolas","Courier New",Courier,mono,serif;
+  font-size: 80%;
+  margin: 0 2px;
+  padding: 4px 5px;
+  background-color: #f2f2f2;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+div.post_txt pre {    
+  font-family: "Consolas","Liberation Mono",Courier,monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5d6a6a;
+  padding: 0.6em;
+  border-left:5px solid #ccc;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+div.post_txt pre code{
+  border-radius: 0 0 0 0 ;
+  background-color: transparent ;
+  border: 0 ;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  display: block;
+  position: relative;
+}
+
+div.post_txt pre b.name {
+  position: absolute;
+  line-height: 1;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #eee;
+  pointer-events: none;
+}
+
+div.post_txt ul,
+div.post_txt ol,
+div.post_txt dl {
+  margin-left:25px;
+}
+
+/* 文章内代码行号高亮 */
+div.post_txt .firekylin-code > ul {
+  list-style: decimal;
+  background-color: #fff;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+}
+div.post_txt .firekylin-code li {
+  list-style: decimal-leading-zero;
+  border-left: 1px solid #ddd;
+  padding-left: 2px;
+  position: relative;
+}
+div.post_txt .firekylin-code li.mark {
+  background-color: #fffbdd !important;
+}
+div.post_txt .firekylin-code li:hover {
+  background-color: #f3f3f3 !important;
+}
+div.post_txt .firekylin-code .line-num {
+  width: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  left: -40px;
+  cursor: pointer;
+}
+div.post_txt .firekylin-code li:nth-of-type(even) {
+  background-color: #fcfcfc;
+  color: inherit;
+}
+div.post_txt pre .firekylin-code {
+  background-color: #eee;
+}
+/*下面是覆盖默认样式, 为了防闪动*/
+div.post_txt pre {
+  border-left: none;
+  padding: 0;  
+}
+div.post_txt pre code {
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid  #eee;
+  padding: 0;
+  line-height: 26px;
+}
+div.post_txt ul, li ,ol{list-style: none;padding-left:0;list-style-type:none;}
+
+

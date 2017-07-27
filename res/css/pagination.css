@@ -1,0 +1,25 @@
+.pagination {
+  width:100%;
+  line-height:20px;
+  position:relative;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #ddd;
+  overflow:hidden;
+  font-size: 20px;
+}
+
+.pagination .prev {
+  float:left;
+  padding: 15px 30px;
+}
+
+.pagination .next {
+  float:right;
+  padding: 15px 30px;
+}
+.pagination .center {
+  text-align:center;
+  width:80px;
+  margin:auto;
+  padding: 15px 30px;
+}

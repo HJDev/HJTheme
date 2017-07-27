@@ -1,0 +1,122 @@
+{% extends './layout.html' %}
+
+{% block title -%}
+{{post.title}} - {{options.title}}
+{%- endblock %}
+
+{% block headers -%}
+<link rel="canonical" href="{{site_url}}/post/{{post.pathname}}.html" />
+{%- endblock %}
+
+{% block content %}
+<div class="bdwd main clearfix">
+    <div class="main_center">
+      <div class="postcontent">
+        <!-- post path-->
+        <div class="post_path">
+          <a href="/">首页</a>
+          >
+          <a href="/post/{{post.pathname}}.html">文章</a>
+        </div>
+        <!-- post path-->
+        <h1 class="post_title">{{post.title}}</h1>
+        <div class="post_about">
+          <!--<p>{{think.datetime(post.create_time, 'MM月DD, YYYY')}}</p>-->
+          <!-- post-info -->
+          <div class="post-info">
+            <p>
+              作者
+              {% set user = post.user %}
+              <a href="/author/{{user.name}}" data-user="{{user.display_name}}">
+                <code class="notebook">{% if user.display_name %}{{user.display_name}}{% else %}{{user.name}}{% endif %}</code>
+              </a>
+
+              发表于
+              <i>{{think.datetime(post.create_time)}}</i>
+
+              {% if post.cate.length %}
+              ，添加在分类
+              {% for cate in post.cate %}
+              <a href="/cate/{{cate.pathname}}" data-cate="{{cate.name}}">
+                <code class="notebook">{{cate.name}}</code>
+              </a>
+              {% endfor%}
+              下
+              {% endif %}
+
+              {% if post.tag.length %}
+              ，并被添加「
+              {% for tag in post.tag %}
+              <a href="/tag/{{tag.pathname}}" data-tag="{{tag.name}}">
+                <code class="notebook">{{tag.name}}</code>
+              </a>
+              {% endfor %}
+              」标签
+              {% endif %}
+
+              ，最后修改于
+              <i>{{think.datetime(post.update_time)}}</i>
+            </p>
+            {% if themeConfig.cc %}
+            <p>{{themeConfig.cc | safe}}</p>
+            {% endif %}
+          </div>
+          <!-- post-info -->
+        </div>
+        <div class="post_txt">
+          {{post.content | replace(r/(<img src="([^"]+)" alt="([^"]*)"\s?\/?>)/g, '<img class="lazy-load" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="$2" alt="$3"><noscript>$1</noscript>') | safe}}
+        </div>
+
+        <p style="font-size: large;">本文链接：<a href="{{site_url + http.url | safe}}">{{site_url + http.url | safe}}</a></p>
+        <p style="font-size: large;">-- <acronym title="End of File">EOF</acronym> --</p>
+
+        <div class="go_to_topic"></div>
+
+        <div class="post_keyword">
+
+        </div>
+
+        <div class="post_love">
+          <div class="nbgbox">
+            <a id="zan" class="zan">50</a>
+          </div>
+          <div class="nbgbox">
+            <a id="shoucang" class="shoucang">收藏</a>
+          </div>
+          <div class="nbgbox">
+            <a id="genzong" class="genzong">跟踪</a>
+          </div>
+        </div>
+
+        <!-- comment area -->
+        {%if post.prev.title or post.next.title %}
+        <nav class="pagination">
+          {% if post.prev.title %}
+          <a href="/post/{{ post.prev.pathname }}.html" class="prev">&laquo; {{ post.prev.title }}</a>
+          {% endif %}
+
+          {% if post.next.title %}
+          <a href="/post/{{ post.next.pathname }}.html" class="next">{{ post.next.title }} &raquo;</a>
+          {% endif %}
+        </nav>
+        {% endif %}
+        {% if post.allow_comment %}
+        {% include "./inc/comment.html" %}
+        {% endif %}
+        <!-- comment area -->
+      </div>
+      <!-- postct_share_detail-->
+      <div class="postct_share_detail">
+        <div id="weixin">
+          <a class="weixin_share" ref="nofollow"></a>
+        </div>
+        <a class="ctshare_sina_detail"></a>
+        <a class="ctshare_zone_detail"></a>
+        <a class="ctshare_rr_detail"></a>
+        <a class="ctshare_tx_detail"></a>
+      </div>
+      <!-- postct_share_detail-->
+  </div>
+</div>
+                
+{% endblock %}

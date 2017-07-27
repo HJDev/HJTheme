@@ -1,0 +1,72 @@
+{% extends './layout.html' %}
+
+{% block title -%}
+{% if tag %}标签 {{tag}} - {% elif cate %}分类 {{cate}} - {% endif %}{{options.title}}
+{%- endblock %}
+
+{% block headers -%}
+<link rel="canonical" href="{{site_url}}/{% if tag %}tag/{{pathname}}{% elif cate %}cate/{{pathname}}{% endif %}{% if pagination.currentPage > 1 %}?page={{pagination.currentPage}}{% endif %}" />
+{%- endblock %}
+
+{% block content %}
+<div class="bdwd main clearfix">
+    <div class="main_center">
+      <div id="mainCentent">
+        <div class="newsbox listview" id="listView">
+          {% for post in posts %}
+          <div class="news_li">
+            <div class="news_tu">
+                <a href="/post/{{post.pathname}}.html" class="tiptitleImg">
+                  	<img src="/theme/HJTheme/res/image/default.jpg" alt="上海市委召开会议传达学习中央决定：坚决拥护党中央决定" />
+                </a>
+            </div>
+
+            <h2>
+              	<a href="/post/{{post.pathname}}.html">{{post.title}}</a>
+            </h2>
+            
+            <p>{{post.summary | safe}}</p>
+							
+            <div class="pdtt_trbs">
+              	{% if tag %}
+                <!--<h1 class="intro">标签<a href="{{site_url}}{{http.url}}">{{tag}}</a>下的文章</h1>-->
+              	<a href="{{site_url}}{{http.url}}">{{tag}}</a>
+                {% elif cate %}
+                <!--<h1 class="intro">分类<a href="{{site_url}}{{http.url}}">{{cate}}</a>下的文章</h1>-->
+              	<a href="{{site_url}}{{http.url}}">{{cate}}</a>
+              	{% else %}
+              	
+              	<a href="{{site_url}}">未分类</a>
+                {% endif %}
+              	{% if post.user %}
+                <span class="author">
+                  {% set user = post.user %}
+                  {% if user.display_name %}{{user.display_name}}{% else %}{{user.name}}{% endif %}
+                </span>
+                <span>发布于</span>
+                {% endif %}
+                <span>{{think.datetime(post.create_time, 'MM月DD, YYYY')}}</span>
+                <span class="trbszan">{{post.comment_num}}</span>
+                <div class="trbstxt" style="display: none;">推荐</div>
+            </div>
+            
+            <div class="news_share" style="display: none;">
+                <span>分享到</span>
+                <div>
+                  <a href="#" class="weixin_share" ref="nofollow"></a>
+                </div>
+                <a class="share_sina" ref="nofollow"></a>
+                <a class="share_zone" ref="nofollow"></a>
+                <a class="share_rr" ref="nofollow"></a>
+                <a class="share_tx" ref="nofollow"></a>
+            </div>
+            
+          </div>
+          {% endfor %}
+  		  {% include "./inc/pagination.html" %}
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
